@@ -68,9 +68,16 @@ LDLIBS = -lft
 SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
 OBJ = $(SRC:%.c=%.o)
 
-TICK = \342\234\224
-RE = \342\231\272
-TRASH = \360\237\227\221
+OS = $(shell uname -s)
+ifeq ($(OS), Linux)
+	TICK = \342\234\224
+	RE = \342\231\272
+	TRASH = \360\237\227\221
+else
+	TICK = \xE2\x9C\x94
+	RE = \xE2\x99\xBA
+	TRASH = \xF0\x9F\x97\x91
+endif
 
 default:
 	@make -s all
