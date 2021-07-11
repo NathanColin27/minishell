@@ -5,6 +5,6 @@
 > little bash or zsh. You will learn a lot about processes and file descriptors
 > in this project we have to code from scratch a shell-like program that will behave like bash.
 
-![DEMO](https://github.com/NathanColin27/minishell/edit/master/demo.gif?raw=true)
+![DEMO](demo.gif)
 
 compilation will be done by a `make` command in the terminal, you will then be able to access the program by executing the `minishell` executable file
